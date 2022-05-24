@@ -1,3 +1,19 @@
+<?php
+
+    session_start();
+
+    if(!isset($_SESSION["email"])) {
+
+        header("Location: index.php");
+    } else {
+
+        $email = $_SESSION["email"];
+
+    }
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
